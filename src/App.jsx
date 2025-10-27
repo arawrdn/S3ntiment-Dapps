@@ -4,7 +4,9 @@ import { ethers } from "ethers";
 import WalletButton from "./components/WalletButton";
 import VoteCard from "./components/VoteCard";
 import abi from "./S3ntimentABI.json";
-import logo from "./S3ntiment.png";
+
+// import S3ntiment.png dari root repo langsung
+const logo = new URL("../S3ntiment.png", import.meta.url).href;
 
 const CONTRACT_ADDRESS = "0x58B869dFED326e6Fc7fEe96a2CDa79216Eea80E2";
 
